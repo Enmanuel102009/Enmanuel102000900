@@ -1,0 +1,238 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #0073e6;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Estilos del menú de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0073e6;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd00;
+}
+
+/* Estilo de las secciones */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 60px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #005bb5;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #005bb5;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.btn {
+    padding: 12px 30px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+/* Calculadora */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+input[type="number"] {
+    padding: 12px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #0073e6;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+/* Resolver ejercicio */
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #0073e6;
+}
+
+#resultadoEjercicio {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#resultadoEjercicio p {
+    margin: 5px 0;
+}
+
+/* Estilo de la configuración */
+.config {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+select {
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #0073e6;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Tema oscuro */
+body.dark {
+    background-color: #1e1e1e;
+    color: #ccc;
+}
+
+.dark nav {
+    background-color: #222;
+}
+
+.dark footer {
+    background-color: #222;
+}
+
+.dark .section {
+    background-color: #333;
+    color: #ccc;
+}
+
+.dark input[type="number"],
+.dark textarea,
+.dark select {
+    background-color: #444;
+    color: #ccc;
+    border-color: #555;
+}
+
+.dark .btn {
+    background-color: #005bb5;
+}
+
+.dark #resultado {
+    color: #ffdd00;
+}
